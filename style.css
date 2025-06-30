@@ -341,21 +341,31 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Mobile Responsive Buttons */
-@media (max-width: 600px) {
-    .buttons {
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .nav-links {
+        margin-left: 0;
         flex-direction: column;
-        align-items: stretch;
-    }
-    .section {
-        padding: 20px;
+        align-items: center;
     }
 
-    .buttons button {
-        width: 100%;
-        font-size: 0.95rem;
+    .bio-content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .projects-section h2,
+    .project-grid {
+        margin-left: 0;
     }
 }
+
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+}
+
+
 
 /* Ensure consistency */
 section {
