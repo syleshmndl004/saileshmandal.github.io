@@ -341,6 +341,28 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Mobile Responsive Buttons */
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .buttons button {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+}
+
+/* Ensure consistency */
+section {
+    background-color: #1a1a1a;
+}
+
 /* Responsive Fixes */
 @media (max-width: 768px) {
     .nav-links {
@@ -349,25 +371,70 @@ footer {
         align-items: center;
     }
 
+    .bio-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 5%;
+    }
+
     .bio-content {
         margin-left: 0;
         text-align: center;
+    }
+
+    .bio-content h1,
+    .bio-content h2 {
+        font-size: 2rem;
+    }
+
+    .bio-image img {
+        max-width: 80%;
+        margin-top: 20px;
     }
 
     .projects-section h2,
     .project-grid {
         margin-left: 0;
     }
+
+    .project-card img {
+        height: auto;
+    }
+
+    .interests-section h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .bio-content h1,
+    .bio-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .buttons button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
 }
 
 /* Prevent horizontal scroll */
 html, body {
     overflow-x: hidden;
-}
-
-
-
-/* Ensure consistency */
-section {
-    background-color: #1a1a1a;
 }
